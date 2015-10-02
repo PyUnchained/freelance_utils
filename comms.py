@@ -6,8 +6,10 @@ from email.MIMEMultipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
 from email.utils import formataddr
-from django.core.mail import send_mail, EmailMessage
+from django.core.mail import send_mail, EmailMessage, EmailMultiAlternatives
 from django.conf import settings
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 
 logger = logging.getLogger(__name__)
 
@@ -95,12 +97,6 @@ class MailComm:
 			'TIME':time.strftime("%c"),
 			'TO':self.msg['To']})
 		logger.info(logger_msg)
-
-		print [1, {'HOST':self.host,
-			'HOST_USER': self.sender,
-			'PORT': self.host_port,
-			'TIME':time.strftime("%c"),
-			'TO':self.msg['To']}]
 
 		return [1, {'HOST':self.host,
 			'HOST_USER': self.sender,

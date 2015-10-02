@@ -1,11 +1,15 @@
+import autofixture
 import unittest
 from smtplib import SMTP_SSL
 from mock import patch, call
 import mock
 
 from django.core.exceptions import *
+from django.conf import settings
+
 from freelance_utils.comms import MailComm, SMSComm
 from freelance_utils.tests.utils import is_lib_available
+
 
 
 
@@ -13,7 +17,6 @@ class TestComms(unittest.TestCase):
 	"""
 	Tests the communications utilities (e-mail, sms)
 	"""
-
 
 	def test_mail_comm(self):
 		"""

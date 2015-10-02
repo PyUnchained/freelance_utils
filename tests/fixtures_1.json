@@ -1,0 +1,133 @@
+[
+{
+    "fields": {
+        "username": "tatenda",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-07-23T22:15:36.802Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$734dx5zwDmqw$YSPV0DqoD9rgCKYWWCQCwYHdIpfU+a2E64BSB4DxYx4=",
+        "email": "tat@enda.com",
+        "date_joined": "2015-07-23T22:15:21.673Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "expire_date": "2015-08-06T22:15:36.938Z",
+        "session_data": "ZmVmMzRhM2VhNTAyZDk3OWZmNmVmNjkxOWEzNDYzNzgyZTkyN2VjNTp7Il9hdXRoX3VzZXJfaGFzaCI6IjAxOTQ1ZDBhOWJjZmZhMzY5OTE2ZjI5YTBhZjk5YTA0MDc0ZTI3ZTUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0="
+    },
+    "model": "sessions.session",
+    "pk": "72ujfu3dpey9p0w623pzpztymieu3948"
+},
+{
+    "fields": {
+        "computed_address": "57 Fife Avenue, Harare, Zimbabwe",
+        "latitude": -17.8213724,
+        "geocode_error": false,
+        "longitude": 31.0449666,
+        "address": "Zimbabwe, Harare, 57 Fife Ave"
+    },
+    "model": "easy_maps.address",
+    "pk": 1
+},
+{
+    "fields": {
+        "date": "2015-07-27T13:33:28Z",
+        "amount": "45.78",
+        "created_on": "2015-07-27T13:34:55.913Z",
+        "user": [
+            "tatenda"
+        ]
+    },
+    "model": "freelance_utils.basetransaction",
+    "pk": 1
+},
+{
+    "fields": {
+        "date": "2015-07-27T13:35:05Z",
+        "amount": "23.78",
+        "created_on": "2015-07-27T13:35:10.144Z",
+        "user": [
+            "tatenda"
+        ]
+    },
+    "model": "freelance_utils.basetransaction",
+    "pk": 2
+},
+{
+    "fields": {
+        "date": "2015-07-27T13:35:23Z",
+        "amount": "-123.90",
+        "created_on": "2015-07-27T13:35:33.568Z",
+        "user": [
+            "tatenda"
+        ]
+    },
+    "model": "freelance_utils.basetransaction",
+    "pk": 3
+},
+{
+    "fields": {
+        "date": "2015-07-27T13:35:39Z",
+        "amount": "-45.67",
+        "created_on": "2015-07-27T13:35:45.401Z",
+        "user": [
+            "tatenda"
+        ]
+    },
+    "model": "freelance_utils.basetransaction",
+    "pk": 4
+},
+{
+    "fields": {
+        "type": "C"
+    },
+    "model": "freelance_utils.transaction",
+    "pk": 1
+},
+{
+    "fields": {
+        "type": "C"
+    },
+    "model": "freelance_utils.transaction",
+    "pk": 2
+},
+{
+    "fields": {
+        "type": "D"
+    },
+    "model": "freelance_utils.transaction",
+    "pk": 3
+},
+{
+    "fields": {
+        "type": "D"
+    },
+    "model": "freelance_utils.transaction",
+    "pk": 4
+},
+{
+    "fields": {
+        "bal": "0.00",
+        "last_modified": "2015-07-27T13:45:37.791Z",
+        "user_number": null,
+        "user": [
+            "tatenda"
+        ],
+        "history": [
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "model": "freelance_utils.account",
+    "pk": 1
+}
+]
