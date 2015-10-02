@@ -1,5 +1,7 @@
 *.pyc
 settings.py
 uploads/**/*
+static_dev/**/*
+media_dev/**/*
 *.sqlite3
 
